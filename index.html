@@ -1,19 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="The Best website for unblocked games!">
-  <meta name="keywords" content="Games,Unblocked Games,Unity,WebGL,Unblocked,Google Sites,tyler's game hub,tyler's unblocked games,tyler's games unblocked">
-  <meta name="author" content="Tyler Palko">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="description" content="The Best website for unblocked games!" />
+  <meta name="keywords" content="Games,Unblocked Games,Unity,WebGL,Unblocked,Google Sites,tyler's game hub,tyler's unblocked games,tyler's games unblocked" />
+  <meta name="author" content="Ryan" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tyler's Game Hub</title>
-  <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="resources/favicon.ico" />
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('https://images.unsplash.com/photo-1607083206173-4d134c7d1326') no-repeat center center fixed;
+      background: url('https://i.imgur.com/s14T3tD.gif') no-repeat center center fixed;
       background-size: cover;
       color: white;
       text-align: center;
@@ -66,11 +65,8 @@
       margin-top: 50px;
       padding: 20px;
       background: rgba(0, 0, 0, 0.7);
-    }
-    footer a {
-      color: #00ccff;
-      margin: 0 10px;
-      text-decoration: none;
+      height: 0;
+      overflow: hidden;
     }
   </style>
 </head>
@@ -78,38 +74,53 @@
   <div class="heading">
     <h1>Tyler's Game Hub</h1>
     <div class="search-bar">
-      <input type="text" id="searchInput" onkeyup="filterGames()" placeholder="Search for a game...">
+      <input type="text" id="searchInput" onkeyup="filterGames()" placeholder="Search for a game..." />
     </div>
   </div>
 
   <div class="games-container" id="gamesList">
+    <!-- START GAME CARDS -->
     <div class="game-card">
       <a href="1v1.lol">
-        <img src="https://cdn.jsdelivr.net/gh/3kh0/assets@main/1v1lol/icon.jpg" alt="1v1.lol">
+        <img src="https://cdn.jsdelivr.net/gh/3kh0/assets@main/1v1.lol/icon.jpg" onerror="this.src='https://via.placeholder.com/150?text=1v1.LOL'" />
         <div class="game-card-title">1v1.LOL</div>
       </a>
     </div>
     <div class="game-card">
       <a href="2048">
-        <img src="https://cdn.jsdelivr.net/gh/3kh0/assets@main/2048/icon.png" alt="2048">
+        <img src="https://cdn.jsdelivr.net/gh/3kh0/assets@main/2048/icon.png" onerror="this.src='https://via.placeholder.com/150?text=2048'" />
         <div class="game-card-title">2048</div>
       </a>
     </div>
     <div class="game-card">
       <a href="bitlife">
-        <img src="https://cdn.jsdelivr.net/gh/3kh0/assets@main/bitlife/icon.jpg" alt="BitLife">
+        <img src="https://cdn.jsdelivr.net/gh/3kh0/assets@main/bitlife/icon.jpg" onerror="this.src='https://via.placeholder.com/150?text=BitLife'" />
         <div class="game-card-title">BitLife</div>
       </a>
     </div>
-    <!-- Add more games here -->
+    <div class="game-card">
+      <a href="cookieclicker">
+        <img src="https://cdn.jsdelivr.net/gh/3kh0/assets@main/cookieclicker/icon.png" onerror="this.src='https://via.placeholder.com/150?text=Cookie+Clicker'" />
+        <div class="game-card-title">Cookie Clicker</div>
+      </a>
+    </div>
+    <div class="game-card">
+      <a href="retrobowl">
+        <img src="https://cdn.jsdelivr.net/gh/3kh0/assets@main/retrobowl/icon.jpg" onerror="this.src='https://via.placeholder.com/150?text=Retro+Bowl'" />
+        <div class="game-card-title">Retro Bowl</div>
+      </a>
+    </div>
+    <div class="game-card">
+      <a href="geometrydash">
+        <img src="https://cdn.jsdelivr.net/gh/3kh0/assets@main/geometrydash/icon.png" onerror="this.src='https://via.placeholder.com/150?text=Geometry+Dash'" />
+        <div class="game-card-title">Geometry Dash</div>
+      </a>
+    </div>
+    <!-- Add more like above -->
+    <!-- END GAME CARDS -->
   </div>
 
-  <footer>
-    <div class="footer">
-      <a href="https://github.com/TylerPalko/gamehub">Source Code</a>
-      <a href="bitcoin:bc1q5072l0wec75kvatudg3qh8zxk40dmem0d0zu0kzszemxc87qqv9s9z608y">Donate BTC</a>
-    </div>
-  </footer>
+  <footer></footer>
 
   <script>
     function filterGames() {
